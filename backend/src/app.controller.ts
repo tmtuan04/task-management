@@ -1,12 +1,12 @@
 import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
 
-@Controller()
+// @Controller('hello') nghĩa là API này có đường dẫn /hello
+// @Get() nghĩa là đây là phương thức GET
+
+@Controller('hello')
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
   @Get()
   getHello(): string {
-    return this.appService.getHello();
+    return 'Hello from NestJS!';
   }
 }
