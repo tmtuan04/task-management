@@ -1,4 +1,5 @@
-# Logs
+
+# 1. Logs
 logs
 *.log
 npm-debug.log*
@@ -7,20 +8,36 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# 2. Node modules (cả frontend và backend)
+node_modules/
+frontend/node_modules/
+backend/node_modules/
 
-# Editor directories and files
+# 3. Build outputs
+dist/
+frontend/dist/
+backend/dist/
+frontend/.next/
+frontend/.turbo/
+
+# 4. Local env files
+*.local
+.env
+.env.*.local
+
+# 5. System files
+.DS_Store
+
+# 6. IDE/editor files
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-note.md
+# 7. Misc
+coverage/
+*.tgz
