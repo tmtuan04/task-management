@@ -41,3 +41,5 @@ frontend/.turbo/
 # 7. Misc
 coverage/
 *.tgz
+
+note.md
